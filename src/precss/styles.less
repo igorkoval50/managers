@@ -459,17 +459,25 @@ body {
 		.owl-nav {
 			background-color: red;
 			position: absolute;
-			top: 0;
+			top: 50px;
 			width: 100%;
 			.owl-prev {
 				display: block;
 				position: absolute;
 				left: 0;
+				outline: none;
+				&:hover {
+					background-color: initial;
+				}
 			}
 			.owl-next {
 				display: block;
 				position: absolute;
 				right: 0;
+				outline: none;
+				&:hover {
+					background-color: initial;
+				}
 			}
 		}
 	}

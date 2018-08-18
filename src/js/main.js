@@ -26,6 +26,7 @@ $(function(){
     margin:10,
     nav:true,
     dots: false,
+    navText: ["<img src='img/left.png'>", "<img src='img/right.png'>"],
     responsive:{
         0:{
             items:1
