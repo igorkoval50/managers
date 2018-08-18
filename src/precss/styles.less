@@ -1,5 +1,4 @@
 @import "smart-grid.less";
-@import "media.less";
 
 .reset();
 
@@ -8,6 +7,9 @@
 }
 body {
 	overflow-x: hidden;
+}
+.overflow {
+	overflow-y: hidden;
 }
 /////////////COSTUME OPTION /////////
 ///////////FONTS/////////////////////////////
@@ -36,6 +38,11 @@ body {
 	font-family: 'Raleway', sans-serif;
 	font-weight:700;
 }
+.nexa-bold {
+	font-family: "nexabold", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+}
 
 //////////COLOR//////////
 @white: #fff;
@@ -48,11 +55,6 @@ body {
 @info: #6e737a;
 @bgc3: #2b2f35;
 
-
-// .script {
-// 	font-family: 'Freestyle Script Normal', arial;
-// 	font-weight: normal;
-// }
 
 ////////////////section nav /////////////
 .header {
@@ -68,12 +70,13 @@ body {
 	&__logo {
 		.col();
 		h3 {
+			.nexa-bold;
 			display: inline-block;
 			text-transform: uppercase;
 			color: @white;
 			font-size: 26px;
 			margin-left: 20px;
-			vertical-align: 4px;
+			vertical-align: 2px;
 		}
 	}
 	&__nav {
@@ -94,13 +97,13 @@ body {
 			text-decoration: none;
 			font-size: 14px;
 			color: @white;
-			&:hover {
-				padding-bottom: 44px;
-				border-bottom: 2px solid #b5a263;
-				transition-delay: 0.2s;
-			}
+			
 		}
 	}
+}
+.active {
+	padding-bottom: 44px;
+	border-bottom: 2px solid #b5a263;
 }
 ////////responsive menu/////////////////
 .menu {
@@ -166,7 +169,7 @@ body {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		right: -100vw;
+		right: -110vw;
 		transition: all 0.4s;
 		&-active {
 			right: 0;
@@ -578,6 +581,14 @@ body {
 			border-radius: 50%;
 			border: 2px solid @info;
 			position: relative;
+			&:hover {
+				background-color: @yellow;
+				border: 2px solid @yellow;
+				transition: 0.2s;
+				i {
+					color: @white;
+				}
+			}
 			 &:first-child {
 				margin-left: 0;
 				margin-left: -27px;

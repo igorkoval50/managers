@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "nexabold";
+	src: url("../fonts/nexabold/nexabold.eot");
+	src: url("../fonts/nexabold/nexabold.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/nexabold/nexabold.woff") format("woff"),
+			 url("../fonts/nexabold/nexabold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}

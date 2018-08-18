@@ -9,11 +9,10 @@ $(function(){
     link.on("click", function() {
         link.toggleClass('menu-link_active');
         menu.toggleClass('menu-active');
-        $("html,body").css("overflow","hidden");
+        $("html,body").toggleClass('overflow');
     });
     linkActive.on("click", function() {
         link.removeClass('menu-link_active');
-        $("html,body").css("overflow","show");
     });
     nav.on("click", function() {
         menu.toggleClass('menu-active');
@@ -41,6 +40,13 @@ $(function(){
 })
 
 ////HOVER EFFECT FOR MENU///////
+    var nav = $("#home_navigation a");
+    var a = $(".first");
+    a.addClass('active');
+        nav.click(function (e) {
+        nav.addClass("active").not(this).removeClass("active");
+    });
+
 });
 
 
