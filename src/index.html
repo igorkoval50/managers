@@ -18,7 +18,7 @@
 			<img src="img/logo.png" alt="logo">
 			<h3>Fapor</h3>
 		</div>
-		<div class="header__nav" id="home_navigation">
+		<div class="header__nav wow bounceInUp" id="home_navigation">
 			<ul>
 				<li><a href="#home" class="first">Home</a></li>
 				<li><a href="#about">About</a></li>
@@ -48,7 +48,7 @@
  <div class="about__wrap"></div>
  	<div class="wrapper">
  		<div class="about__text">
- 			<h1>More About US</h1>
+ 			<h1 class="wow slideInLeft" data-wow-duration="1s">More About US</h1>
  		</div>
  	</div>
  </section>
@@ -57,11 +57,11 @@
  <section id="service" class="service">
  	<div class="wrapper">
  		<div class="service__txt">
- 			<h2>Management</h2>
- 			<span></span>
+ 			<h2 class="wow slideInRight" data-wow-duration="1s" data-wow-offset="120">Management</h2>
+ 			<span class="wow bounceIn" data-wow-duration="1s" data-wow-offset="120"></span>
  		</div>
  		<div class="row">
- 			<div class="service__workers">
+ 			<div class="service__workers wow fadeInUp" data-wow-duration="0.8s" data-wow-offset="300">
  				<img src="img/man_one.jpg" alt="person"> 					<div class="service__more">
  				<div class="service_info">
  					<h3>Courteney Cox</h3>
@@ -74,7 +74,7 @@
  				</div>
  			</div>
  		</div>
- 		<div class="service__workers">
+ 		<div class="service__workers wow fadeInUp" data-wow-duration="1.4s" data-wow-offset="300">
  			<img src="img/man_two.jpg" alt="person">
  			<div class="service__more">
  				<div class="service_info">
@@ -88,7 +88,7 @@
  				</div>
  			</div>
  		</div>
- 		<div class="service__workers">
+ 		<div class="service__workers wow fadeInUp" data-wow-duration="2s" data-wow-offset="300">
  			<img src="img/man_three.jpg" alt="person">
  			<div class="service__more">
  				<div class="service_info">
@@ -102,7 +102,7 @@
  				</div>
  			</div>
  		</div>
- 		<div class="service__all">
+ 		<div class="service__all wow jello" data-wow-offset="100">
  			<button class="btn">Show All</button>
  		</div>
  	</div>
@@ -148,21 +148,21 @@
 <section id="contact" class="contact">
 	<div class="wrapper">
 		<div class="row">
-			<div class="contact__info">
+			<div class="contact__info wow fadeInUp" data-wow-duration="0.8s" data-wow-offset="100">
 				<h3>about fapor</h3>
 				<p>We are a fairly small, flexible design studio that designs for print and web. We work flexibly with clients to fulfil their design needs. Whether you need to create a brand from scratch, including marketing materials and a beautiful.</p>
 			</div>
-			<div class="contact__info">
+			<div class="contact__info wow fadeInUp" data-wow-duration="2s" data-wow-offset="100">
 				<h3>contact info</h3>
 				<p>PO Box 17122 Nollins Street 5034 Los Angelos</p>
 				<p>Phone: 1800555.0658
 				Email: support@fapor.com
 				Web: fapor.com</p>
 			</div>
-			<div class="contact__info">
+			<div class="contact__info wow fadeInUp" data-wow-duration="2.6s" data-wow-offset="100">
 				<h3>subscribe to our newsletter</h3>
-				<form action="#">
-					<input type="email" placeholder="Enter your email address">
+				<form action="#" id="contact__form">
+					<input type="email" placeholder="Enter your email address" required="">
 					<button class="contact__btn">subscrible now</button>
 				</form>
 			</div>
@@ -193,10 +193,16 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+
+	<link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+              new WOW().init();
+    </script>
     <script src="js/main.js"></script>
     </body>
 </html>
